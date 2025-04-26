@@ -1,0 +1,112 @@
+{% extends 'fighters/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="particles-js" class="absolute inset-0"></div>
+    <div class="relative z-10">
+        <h1 class="text-4xl font-bold futuristic-title mb-6">Predictions & Polls</h1>
+        
+        {% for fight in upcoming_fights %}
+            <div class="futuristic-container p-6 mb-6">
+                <h2 class="text-2xl futuristic-title">{{ fight.event_name }}</h2>
+                <div class="flex justify-center items-center space-x-6 my-6">
+                    <div class="text-center">
+                        <a href="{% url 'fighters:fighter_detail' pk=fight.fighter1.pk %}">
+                        {% if fight.fighter1.photo %}
+                            <div class="futuristic-photo-container futuristic-photo-container-small mx-auto">
+                                <img src="{{ fight.fighter1.photo.url }}" alt="{{ fight.fighter1.name }}" class="futuristic-photo">
+                            </div>
+                        {% else %}
+                            <div class="futuristic-photo-placeholder futuristic-photo-placeholder-small mx-auto">
+                                No Photo
+                            </div>
+                        {% endif %}
+                        </a>
+                        <p class="futuristic-text mt-2">{{ fight.fighter1.name }}</p>
+                    </div>
+                    <div class="futuristic-vs">vs</div>
+                    <div class="text-center">
+                        <a href="{% url 'fighters:fighter_detail' pk=fight.fighter2.pk %}">
+                        {% if fight.fighter2.photo %}
+                            <div class="futuristic-photo-container futuristic-photo-container-small mx-auto">
+                                <img src="{{ fight.fighter2.photo.url }}" alt="{{ fight.fighter2.name }}" class="futuristic-photo">
+                            </div>
+                        {% else %}
+                            <div class="futuristic-photo-placeholder futuristic-photo-placeholder-small mx-auto">
+                                No Photo
+                            </div>
+                        {% endif %}
+                        </a>
+                        <p class="futuristic-text mt-2">{{ fight.fighter2.name }}</p>
+                    </div>
+                </div>
+                <p class="futuristic-text">Date: {{ fight.event_date|date:"F d, Y, H:i T" }}</p>
+                <a href="{% url 'fighters:poll' fight.id %}" class="btn btn-neon-green px-4 py-2 rounded mt-2 inline-block">Vote & Predict</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#0f0"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#0f0",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,2521 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-04-24T05:02:59.418Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-04-24T05:12:39.970Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-04-24T05:25:22.145Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-04-24T05:43:17.407Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Bio\", \"Striking\", \"Grappling\", \"Stamina\", \"Defense\", \"Speed\", \"Video id\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-04-24T05:45:34.829Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video id\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-04-24T05:50:29.687Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video id\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-04-24T05:54:30.901Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-04-24T05:56:57.399Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-04-24T05:59:12.469Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video id\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-04-24T06:00:55.448Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video id\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-04-24T06:02:12.275Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-04-24T06:10:40.523Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Dustin Poirier",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-04-24T06:11:10.606Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Dustin Poirier",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Record\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-04-24T06:13:45.042Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-04-24T06:15:43.443Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Detailed stats\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-04-24T06:16:38.907Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Dustin Poirier",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Detailed stats\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-04-24T06:17:48.445Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weaknesses\", \"Bio\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-04-24T06:27:11.650Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Ilia Topuria",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-04-24T06:30:48.893Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Islam Makhachev",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-04-24T11:28:32.474Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Jon Jones",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-04-24T11:34:33.638Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Francis Ngannou",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-04-24T12:02:01.762Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-04-24T12:19:54.324Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Merab Dvalishvili",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-04-24T12:25:12.655Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Jon Jones",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight class\", \"P4p ranking\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-04-24T12:25:29.469Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Islam Makhachev",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight class\", \"P4p ranking\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-04-24T12:25:35.302Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-04-24T12:27:34.540Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Ilia Topuria",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight class\", \"P4p ranking\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-04-24T12:39:44.714Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Dricus Du Plessis",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-04-24T12:42:01.681Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Ilia Topuria",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-04-24T12:42:18.071Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-04-24T12:43:45.692Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Merab Dvalishvili",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-04-24T12:48:30.518Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Magomed Ankalaev",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-04-24T12:50:36.935Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Magomed Ankalaev",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-04-24T12:53:33.016Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Belal Muhammad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-04-24T12:57:23.437Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Alex Pereira",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-04-24T13:00:44.287Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Alexander Volkanovski",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-04-24T13:04:00.938Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Alexandre Pantoja",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-04-24T13:05:46.432Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Khabib Nurmagomedov",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Defense\", \"Speed\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-04-24T13:07:07.663Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Conor McGregor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Grappling\", \"Stamina\", \"Defense\", \"Speed\", \"Recent fights\", \"Is active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-04-24T13:10:32.747Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Dustin Poirier",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Record\", \"Weight class\", \"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Stamina\", \"Defense\", \"Speed\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-04-24T13:25:06.100Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Ilia Topuria",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Grappling\", \"Stamina\", \"Defense\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-04-24T13:25:28.822Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Francis Ngannou",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight class\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-04-24T13:28:30.831Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Tom Aspinall",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-04-24T13:31:53.094Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Francis Ngannou",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Grappling\", \"Stamina\", \"Speed\", \"Video id\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-04-24T13:34:02.898Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "Max Holloway",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-04-24T13:37:06.413Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "Sean O'Malley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-04-24T13:42:46.698Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "Charles Oliveira",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-04-24T13:44:13.892Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Islam Makhachev",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Grappling\", \"Stamina\", \"Defense\", \"Speed\", \"Video id\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-04-24T13:47:45.467Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "Arman Tsarukyan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-04-24T13:52:55.820Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Ilia Topuria",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Weight class\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-04-24T13:55:22.725Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Jon Jones",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Strengths\", \"Weaknesses\", \"Bio\", \"Striking\", \"Grappling\", \"Stamina\", \"Defense\", \"Detailed stats\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-04-25T01:42:05.513Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "Colby Covington",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-04-25T01:42:05.513Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "Leon Edwards",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-04-25T01:44:40.983Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "23",
+    "object_repr": "Colby Covington",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-04-25T01:44:40.983Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Leon Edwards",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-04-25T02:02:28.332Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "27",
+    "object_repr": "Michael Page",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-04-25T02:12:16.449Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "30",
+    "object_repr": "Yair Rodriguez",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-04-25T02:12:16.449Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "29",
+    "object_repr": "Petr Yan",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-04-25T02:12:16.449Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "28",
+    "object_repr": "Sean Brady",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-04-25T02:12:16.449Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "31",
+    "object_repr": "Leon Edwards",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-04-25T02:12:45.774Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "34",
+    "object_repr": "Yair Rodriguez",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-04-25T02:12:58.832Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "33",
+    "object_repr": "Petr Yan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-04-25T02:13:16.872Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "34",
+    "object_repr": "Yair Rodriguez",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Martial art\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-04-25T02:13:28.044Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "33",
+    "object_repr": "Petr Yan",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Martial art\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-04-25T02:13:46.788Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "32",
+    "object_repr": "Sean Brady",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Martial art\", \"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-04-25T02:14:27.794Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "26",
+    "object_repr": "Jack Della Maddalena",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-04-25T02:14:40.504Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "26",
+    "object_repr": "Jack Della Maddalena",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2025-04-25T02:14:57.629Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "25",
+    "object_repr": "Ian Machado Garry",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2025-04-25T02:15:10.469Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "25",
+    "object_repr": "Ian Machado Garry",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2025-04-25T02:15:34.792Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "Colby Covington",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2025-04-25T02:16:27.111Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Leon Edwards",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2025-04-25T02:16:51.180Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "Colby Covington",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2025-04-25T02:17:32.431Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Leon Edwards",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"P4p ranking\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2025-04-25T02:20:17.591Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Kamaru Usman",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Recent fights\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2025-04-25T02:23:30.383Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Kamaru Usman",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2025-04-25T11:38:37.577Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Carlos Prates",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2025-04-25T11:59:32.790Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Carlos Prates",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2025-04-25T13:27:16.132Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "UFC 316: Merab Dvalishvili vs Sean O'Malley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2025-04-25T13:27:50.042Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "UFC 316: Dvalishvili vs. O'Malley 2: Merab Dvalishvili vs Sean O'Malley",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2025-04-25T13:34:24.379Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Brandon \"Raw Dawg\" Royval",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2025-04-25T13:40:49.830Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "Brandon Moreno",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2025-04-25T13:45:05.534Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Vote for Belal Muhammad in UFC 315: Muhammad vs. Della Maddalena: Belal Muhammad vs Jack Della Maddalena",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2025-04-25T13:45:20.500Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Vote for Sean O'Malley in UFC 316: Dvalishvili vs. O'Malley 2: Merab Dvalishvili vs Sean O'Malley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2025-04-25T13:45:35.217Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Vote for Merab Dvalishvili in UFC 316: Dvalishvili vs. O'Malley 2: Merab Dvalishvili vs Sean O'Malley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2025-04-25T13:50:36.363Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "41",
+    "object_repr": "Joaquin Buckley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add fighter",
+    "content_type": 7,
+    "codename": "add_fighter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change fighter",
+    "content_type": 7,
+    "codename": "change_fighter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete fighter",
+    "content_type": 7,
+    "codename": "delete_fighter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view fighter",
+    "content_type": 7,
+    "codename": "view_fighter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add vote",
+    "content_type": 8,
+    "codename": "add_vote"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change vote",
+    "content_type": 8,
+    "codename": "change_vote"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete vote",
+    "content_type": 8,
+    "codename": "delete_vote"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view vote",
+    "content_type": 8,
+    "codename": "view_vote"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add fight card",
+    "content_type": 9,
+    "codename": "add_fightcard"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change fight card",
+    "content_type": 9,
+    "codename": "change_fightcard"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete fight card",
+    "content_type": 9,
+    "codename": "delete_fightcard"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view fight card",
+    "content_type": 9,
+    "codename": "view_fightcard"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$NyKGad64Jz1zyg41keF9Qp$RlnjzvvkXd7uYnJhT/aJjiihV3RGZ/vN0+xRlN4aMf8=",
+    "last_login": "2025-04-24T05:01:55.936Z",
+    "is_superuser": true,
+    "username": "arjun",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-24T05:01:35.532Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "irup9krsqox55lada0r1zqaxkkg41cp6",
+  "fields": {
+    "session_data": ".eJyrVirLL0lNiU_LTM8oiTdSsiopKk3VQRE0hAjWAgBeSg_o:1u8Iye:7-rjbRLEXHh3aczQ8cVKQGfaJp1THULgIiqG_8JKNpw",
+    "expire_date": "2025-05-09T13:20:24.694Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k8vv7vqpxjjljm2rncptj7dqtcggkgsn",
+  "fields": {
+    "session_data": ".eJxtjEEOgjAQRe_StWlaKC24dO8ZmunMlKKGJlDcGO8uRBaSuH3v__cSHpaS_DLz5AcSZ6HF6ZcFwDuPm6AbjH2WmMcyDUFuE7nbWV4z8eOybw-BBHNa39iEEEC5Tlkbra066mp2jAYM6xq0ociGwFmDhrC1rVJMzqGOUMVWN2v0mQuTj0Ofiq_EuUwLH6H-B-svfH8AooZPEA:1u8JNF:Z5D4pd_3IuWhBlyaaXB3yOOK3AFQzbRhh9jyy_Iu4rM",
+    "expire_date": "2025-05-09T13:45:49.198Z"
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 1,
+  "fields": {
+    "name": "Khabib Nurmagomedov",
+    "martial_art": "MMA",
+    "record": "29-0-0",
+    "strengths": "Elite grappling and top control, relentless pressure, exceptional cardio, mental toughness, unbreakable will",
+    "weaknesses": "Limited striking diversity, occasional vulnerability to body shots",
+    "bio": "Khabib \"The Eagle\" Nurmagomedov is a retired Russian mixed martial artist and former UFC Lightweight Champion. He is widely regarded as one of the greatest fighters in MMA history, retiring with an undefeated record of 29-0. Khabib's dominance was characterized by his unparalleled grappling skills and ability to control opponents on the ground. He was inducted into the UFC Hall of Fame on June 30, 2022.",
+    "photo": "fighters/uf_1656424683kgSavnn0zmC0yPIFZlx0anzZI7-Photoroom.png",
+    "striking": 80,
+    "grappling": 95,
+    "stamina": 90,
+    "defense": 90,
+    "speed": 80,
+    "video_id": "XMJW1L9a-J4",
+    "detailed_stats": {
+      "height (CM)": 178,
+      "reach (CM)": 178,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.1,
+      "Takedown Accuracy": 48,
+      "Submission Average Per 15Min": 1.6
+    },
+    "recent_fights": "Oct 2020: vs. Justin Gaethje (Win)  \r\nSep 2019: vs. Dustin Poirier (Win)  \r\nOct 2018: vs. Conor McGregor (Win)  \r\nApr 2018: vs. Al Iaquinta (Win)  \r\nDec 2017: vs. Edson Barboza (Win)",
+    "is_active": false,
+    "weight_class": "",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 2,
+  "fields": {
+    "name": "Conor McGregor",
+    "martial_art": "MMA",
+    "record": "22-6-0",
+    "strengths": "Explosive knockout power, elite precision striking, mental warfare, fast starts, championship experience",
+    "weaknesses": "Grappling defense, cardio in later rounds, susceptibility to leg kicks",
+    "bio": "Conor \"The Notorious\" McGregor is a former UFC Featherweight and Lightweight Champion, renowned for his striking prowess and charismatic persona. He made history by becoming the first fighter to hold two UFC titles simultaneously. McGregor's notable victories include knockouts over José Aldo and Eddie Alvarez. His last win was a 40-second TKO against Donald Cerrone in January 2020. After a hiatus due to a leg injury sustained in July 2021, McGregor has hinted at a potential return to the octagon in 2025, possibly against Michael Chandler.",
+    "photo": "fighters/photos/images-removebg-preview.png",
+    "striking": 95,
+    "grappling": 70,
+    "stamina": 80,
+    "defense": 75,
+    "speed": 90,
+    "video_id": "eMwWhJJ8oNE?si=QMcPhsbGDrYOP6Py",
+    "detailed_stats": {
+      "height (CM)": 175,
+      "reach (CM)": 188,
+      "stance": "Southpaw",
+      "Significant Strikes Landed Per Min": 5.32,
+      "Takedown Accuracy": 62,
+      "Submission Average Per 15Min": 0.1
+    },
+    "recent_fights": "Jul 2021: vs. Dustin Poirier (Loss)  \r\nJan 2021: vs. Dustin Poirier (Loss)  \r\nJan 2020: vs. Donald Cerrone (Win)  \r\nOct 2018: vs. Khabib Nurmagomedov (Loss)  \r\nNov 2016: vs. Eddie Alvarez (Win)",
+    "is_active": true,
+    "weight_class": "",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 3,
+  "fields": {
+    "name": "Dustin Poirier",
+    "martial_art": "MMA",
+    "record": "30-9-0 (1 NC)",
+    "strengths": "Elite boxing, powerful striking, high fight IQ, durability, experience in high-pressure bouts",
+    "weaknesses": "Susceptibility to submissions, occasional defensive lapses, vulnerability to leg kicks",
+    "bio": "Dustin \"The Diamond\" Poirier is a former UFC interim lightweight champion known for his relentless fighting style and resilience. With notable victories over top contenders like Conor McGregor and Max Holloway, Poirier has solidified his place among the elite in the lightweight division. Despite setbacks in title fights, including a recent submission loss to Islam Makhachev at UFC 302 in June 2024, Poirier continues to be a formidable presence in the octagon. His journey from Lafayette, Louisiana, to the pinnacle of MMA showcases his dedication and passion for the sport",
+    "photo": "fighters/photos/images__2_-removebg-preview.png",
+    "striking": 90,
+    "grappling": 80,
+    "stamina": 85,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "e5LqN0JqPxI",
+    "detailed_stats": {
+      "height (CM)": 175,
+      "reach (CM)": 183,
+      "stance": "Southpaw",
+      "Significant Strikes Landed Per Min": 5.51,
+      "Takedown Accuracy": 36,
+      "Submission Average Per 15Min": 1.3
+    },
+    "recent_fights": "Jun 2024: vs. Islam Makhachev (Loss)  \r\nMar 2024: vs. Benoît Saint Denis (Win)  \r\nJul 2023: vs. Justin Gaethje (Loss)  \r\nNov 2022: vs. Michael Chandler (Win)  \r\nDec 2021: vs. Charles Oliveira (Loss)",
+    "is_active": true,
+    "weight_class": "LIGHTWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 4,
+  "fields": {
+    "name": "Ilia Topuria",
+    "martial_art": "MMA",
+    "record": "16-0-0",
+    "strengths": "Powerful striking, elite grappling, relentless pace, finishing instinct, undefeated record",
+    "weaknesses": "Occasional defensive lapses, limited experience in lightweight division",
+    "bio": "Ilia \"El Matador\" Topuria is a Georgian-born Spanish mixed martial artist and former UFC Featherweight Champion. He captured the title by knocking out Alexander Volkanovski at UFC 298 in February 2024 and successfully defended it against Max Holloway at UFC 308 in October 2024. With a perfect 16-0 record, Topuria is known for his explosive striking and submission skills. In April 2025, he vacated his featherweight title to move up to the lightweight division, aiming for a championship bout against Islam Makhachev. Topuria has begun his training camp in preparation for his lightweight debut, which is speculated to take place at UFC 317 during the International Fight Week in June 2025.",
+    "photo": "fighters/5ft6-ilia-topuria-defends-and-kos-5ft-11-max-holloway-on-v0-uqh1dsz1rcxd1-Photoroom.png",
+    "striking": 90,
+    "grappling": 90,
+    "stamina": 85,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "hKvLO2HUPoY",
+    "detailed_stats": {
+      "height (CM)": 170,
+      "reach (CM)": 175,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.69,
+      "Takedown Accuracy": 56,
+      "Submission Average Per 15Min": 2.19
+    },
+    "recent_fights": "Oct 2024: vs. Max Holloway (Win)  \r\nFeb 2024: vs. Alexander Volkanovski (Win)  \r\nJun 2023: vs. Josh Emmett (Win)  \r\nDec 2022: vs. Bryce Mitchell (Win)  \r\nMar 2022: vs. Jai Herbert (Win)",
+    "is_active": true,
+    "weight_class": "LIGHTWEIGHT",
+    "p4p_ranking": 3
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 5,
+  "fields": {
+    "name": "Islam Makhachev",
+    "martial_art": "MMA",
+    "record": "27-1-0",
+    "strengths": "Elite grappling, exceptional fight IQ, dominant top control, precise striking, relentless pressure",
+    "weaknesses": "Limited experience against elite strikers, potential vulnerability to high-volume striking attacks",
+    "bio": "Islam Makhachev is a Russian mixed martial artist competing in the UFC's lightweight division. A protégé of Khabib Nurmagomedov, Makhachev has established himself as a dominant force with a well-rounded skill set. He captured the UFC Lightweight Championship by submitting Charles Oliveira at UFC 280 in October 2022. Makhachev has since defended his title successfully against top contenders, including Alexander Volkanovski and Dustin Poirier. His most recent defense was a first-round submission victory over Renato Moicano at UFC 311 in January 2025. As of April 2025, Makhachev is considered one of the top pound-for-pound fighters in the UFC.",
+    "photo": "fighters/photos/images__3_-removebg-preview.png",
+    "striking": 85,
+    "grappling": 95,
+    "stamina": 90,
+    "defense": 90,
+    "speed": 85,
+    "video_id": "XG4Hhd4rqhA",
+    "detailed_stats": {
+      "height (CM)": 178,
+      "reach (CM)": 179,
+      "stance": "Southpaw",
+      "Significant Strikes Landed Per Min": 2.35,
+      "Takedown Accuracy": 62,
+      "Submission Average Per 15Min": 1.0
+    },
+    "recent_fights": "Jan 2025: vs. Renato Moicano (Win)  \r\nJun 2024: vs. Dustin Poirier (Win)  \r\nOct 2023: vs. Alexander Volkanovski (Win)  \r\nFeb 2023: vs. Alexander Volkanovski (Win)  \r\nOct 2022: vs. Charles Oliveira (Win)",
+    "is_active": true,
+    "weight_class": "LIGHTWEIGHT",
+    "p4p_ranking": 1
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 6,
+  "fields": {
+    "name": "Jon Jones",
+    "martial_art": "MMA",
+    "record": "28-1-0, 1 NC",
+    "strengths": "Exceptional fight IQ, diverse striking arsenal, elite wrestling, reach advantage, adaptability",
+    "weaknesses": "Occasional defensive lapses, history of disciplinary issues, periods of inactivity",
+    "bio": "Jon \"Bones\" Jones is an American mixed martial artist competing in the UFC's heavyweight division. Widely regarded as one of the greatest fighters in MMA history, Jones became the youngest champion in UFC history at age 23 when he won the light heavyweight title in 2011. He successfully defended the title multiple times before moving up to heavyweight. In March 2023, Jones captured the vacant UFC Heavyweight Championship by submitting Ciryl Gane at UFC 285. He defended the title against Stipe Miocic at UFC 309 in November 2024, winning via third-round TKO. As of April 2025, Jones is expected to face interim champion Tom Aspinall in a title unification bout later this year.",
+    "photo": "fighters/Jon_Jones-mb.png.webp",
+    "striking": 90,
+    "grappling": 95,
+    "stamina": 90,
+    "defense": 90,
+    "speed": 85,
+    "video_id": "Wf4B64sRkVQ",
+    "detailed_stats": {
+      "height (CM)": 193,
+      "reach (CM)": 215,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.3,
+      "Takedown Accuracy": 44,
+      "Submission Average Per 15Min": 0.5
+    },
+    "recent_fights": "Nov 2024: vs. Stipe Miocic (Win)  \r\nMar 2023: vs. Ciryl Gane (Win)  \r\nFeb 2020: vs. Dominick Reyes (Win)  \r\nJul 2019: vs. Thiago Santos (Win)  \r\nMar 2019: vs. Anthony Smith (Win)",
+    "is_active": true,
+    "weight_class": "HEAVYWEIGHT",
+    "p4p_ranking": 2
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 7,
+  "fields": {
+    "name": "Francis Ngannou",
+    "martial_art": "MMA",
+    "record": "18-3-0",
+    "strengths": "Devastating knockout power, explosive athleticism, improved grappling, intimidating presence, resilienc",
+    "weaknesses": "Cardio in later rounds, limited ground game, susceptibility to technical strikers",
+    "bio": "Francis \"The Predator\" Ngannou is a Cameroonian-French mixed martial artist known for his ferocious knockout power and rapid ascent in the heavyweight division. Born in Batié, Cameroon, Ngannou overcame a challenging upbringing to become a global MMA sensation. He captured the UFC Heavyweight Championship by defeating Stipe Miocic via second-round knockout at UFC 260 in March 2021. After a successful title defense against Ciryl Gane at UFC 270 in January 2022, Ngannou transitioned to the Professional Fighters League (PFL), where he continued his dominance with a first-round knockout of Renan Ferreira in October 2024.",
+    "photo": "fighters/67964252Fprofile-galery252Ffullbodyleft-picture252FNGANNOU_FRANCIS_L_BELT.webp",
+    "striking": 95,
+    "grappling": 75,
+    "stamina": 70,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "qV5LsxBF7IM",
+    "detailed_stats": {
+      "height (CM)": 193,
+      "reach (CM)": 211,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 2.23,
+      "Takedown Accuracy": 33,
+      "Submission Average Per 15Min": 0.3
+    },
+    "recent_fights": "Oct 2024: vs. Renan Ferreira (Win)  \r\nJan 2022: vs. Ciryl Gane (Win)  \r\nMar 2021: vs. Stipe Miocic (Win)  \r\nMay 2020: vs. Jairzinho Rozenstruik (Win)  \r\nJun 2019: vs. Junior dos Santos (Win)",
+    "is_active": true,
+    "weight_class": "HEAVYWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 8,
+  "fields": {
+    "name": "Merab Dvalishvili",
+    "martial_art": "MMA",
+    "record": "19-4-0",
+    "strengths": "Relentless cardio, elite wrestling, high-volume takedowns, pressure fighting",
+    "weaknesses": "Limited finishing ability, striking power",
+    "bio": "UFC bantamweight champion known for his relentless pace and wrestling dominance. Riding a 12-fight UFC win streak, he claimed the title by defeating Sean O'Malley in September 2024 and defended it against Umar Nurmagomedov in January 2025. Holds the UFC record for most takedowns in history.",
+    "photo": "fighters/DVALISHVILI_MERAB_L_BELT_01-18.png",
+    "striking": 70,
+    "grappling": 95,
+    "stamina": 95,
+    "defense": 85,
+    "speed": 80,
+    "video_id": "C2kaw3T961c",
+    "detailed_stats": {
+      "height (CM)": 168,
+      "reach (CM)": 180,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.21,
+      "Takedown Accuracy": 43,
+      "Submission Average Per 15Min": 0.3
+    },
+    "recent_fights": "Aug 2022: vs. Jose Aldo (Win)  \r\nMar 2023: vs. Petr Yan (Win)  \r\nFeb 2024: vs. Henry Cejudo (Win)  \r\nSep 2024: vs. Sean O'Malley (Win)  \r\nJan 2025: vs. Umar Nurmagomedov (Win)",
+    "is_active": true,
+    "weight_class": "BANTAMWEIGHT",
+    "p4p_ranking": 4
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 9,
+  "fields": {
+    "name": "Dricus Du Plessis",
+    "martial_art": "MMA",
+    "record": "23-2-0",
+    "strengths": "High-pressure striking, powerful grappling, finishing ability, durability",
+    "weaknesses": "Occasional defensive lapses, susceptibility to counter-strikes",
+    "bio": "UFC Middleweight Champion known for his aggressive fighting style and finishing prowess. Du Plessis claimed the title by defeating Sean Strickland at UFC 297 and successfully defended it against Israel Adesanya at UFC 305. He solidified his reign with a unanimous decision victory in a rematch against Strickland at UFC 312.",
+    "photo": "fighters/jP6uFfDG3qBF3hW6u5P0Yc8AsYVAo_imN3C3Jkk1BKtYsj5wtQXazK8afuEZRt3oO-yfgcPpxyKUj7bt59hi0g.webp",
+    "striking": 85,
+    "grappling": 85,
+    "stamina": 90,
+    "defense": 80,
+    "speed": 80,
+    "video_id": "Jd9VapY1l1I",
+    "detailed_stats": {
+      "height (CM)": 185,
+      "reach (CM)": 193,
+      "stance": "Switch",
+      "Significant Strikes Landed Per Min": 6.12,
+      "Takedown Accuracy": 48,
+      "Submission Average Per 15Min": 1.0
+    },
+    "recent_fights": "Mar 2023: vs. Derek Brunson (Win)  \r\nJul 2023: vs. Robert Whittaker (Win)  \r\nJan 2024: vs. Sean Strickland (Win)  \r\nAug 2024: vs. Israel Adesanya (Win)  \r\nFeb 2025: vs. Sean Strickland (Win)",
+    "is_active": true,
+    "weight_class": "MIDDLEWEIGHT",
+    "p4p_ranking": 5
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 10,
+  "fields": {
+    "name": "Magomed Ankalaev",
+    "martial_art": "MMA",
+    "record": "21-1-1 (1 NC)",
+    "strengths": "Technical striking, strong wrestling base, fight IQ, composure under pressure",
+    "weaknesses": "Occasional low output, cautious pace, limited submission game",
+    "bio": "UFC Light Heavyweight Champion from Dagestan, Russia. Known for his disciplined striking and wrestling background, Ankalaev captured the title by defeating Alex Pereira at UFC 313 in March 2025. He remains unbeaten since his UFC debut loss in 2018, showcasing consistent dominance in the division.",
+    "photo": "fighters/ANKALAEV_MAGOMED_L_BELTMOCK.png",
+    "striking": 85,
+    "grappling": 80,
+    "stamina": 85,
+    "defense": 90,
+    "speed": 80,
+    "video_id": "CcIM6Mx8r-A",
+    "detailed_stats": {
+      "height (CM)": 190,
+      "reach (CM)": 190,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 3.55,
+      "Takedown Accuracy": 33,
+      "Submission Average Per 15Min": 0.0
+    },
+    "recent_fights": "Mar 2025: vs. Alex Pereira (Win)  \r\nOct 2024: vs. Aleksandar Rakić (Win)  \r\nJan 2024: vs. Johnny Walker (Win)  \r\nOct 2023: vs. Johnny Walker (No Contest)  \r\nDec 2022: vs. Jan Błachowicz (Draw)",
+    "is_active": true,
+    "weight_class": "LIGHT_HEAVYWEIGHT",
+    "p4p_ranking": 6
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 11,
+  "fields": {
+    "name": "Belal Muhammad",
+    "martial_art": "MMA",
+    "record": "24-3-0 (1 NC)",
+    "strengths": "Exceptional cardio, relentless pressure, elite takedown defense, high fight IQ",
+    "weaknesses": "Limited finishing rate, low knockout power",
+    "bio": "UFC Welterweight Champion known for his durability, volume striking, and strategic control. Muhammad captured the title by defeating Leon Edwards via unanimous decision at UFC 304 in July 2024. He is currently on an 11-fight unbeaten streak and is scheduled to defend his title against Jack Della Maddalena at UFC 315 on May 10, 2025.",
+    "photo": "fighters/MUHAMMAD_BELAL_L_BELTMOCK.png",
+    "striking": 80,
+    "grappling": 85,
+    "stamina": 95,
+    "defense": 90,
+    "speed": 80,
+    "video_id": "ebOzZnMjDbQ",
+    "detailed_stats": {
+      "height (CM)": 180,
+      "reach (CM)": 183,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.75,
+      "Takedown Accuracy": 35,
+      "Submission Average Per 15Min": 0.2
+    },
+    "recent_fights": "Oct 2022: vs. Sean Brady (Win)  \r\nMay 2023: vs. Gilbert Burns (Win)  \r\nJul 2024: vs. Leon Edwards (Win)  \r\nMay 2025: vs. Jack Della Maddalena (Scheduled)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": 7
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 12,
+  "fields": {
+    "name": "Alex Pereira",
+    "martial_art": "MMA",
+    "record": "12-3-0",
+    "strengths": "Devastating knockout power, elite kickboxing background, precise striking, mental toughness",
+    "weaknesses": "Grappling defense, ground game development",
+    "bio": "Alex \"Poatan\" Pereira is a Brazilian mixed martial artist renowned for his exceptional striking skills and knockout power. He began his combat sports career in kickboxing before transitioning to MMA, where he quickly ascended the ranks. Pereira captured the UFC Middleweight Championship in 2022 and later moved up to the Light Heavyweight division, securing the title and defending it successfully multiple times. His notable victories include wins over Jiri Prochazka and Khalil Rountree Jr. Pereira's aggressive fighting style and striking prowess have made him a formidable force in the UFC.",
+    "photo": "fighters/PEREIRA_ALEX_L.png",
+    "striking": 95,
+    "grappling": 70,
+    "stamina": 85,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "aDws6_AGbq8",
+    "detailed_stats": {
+      "height (CM)": 194,
+      "reach (CM)": 203,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 5.0,
+      "Takedown Accuracy": 0,
+      "Submission Average Per 15Min": 0.0
+    },
+    "recent_fights": "Mar 2025: vs. Magomed Ankalaev (Loss)  \r\nOct 2024: vs. Khalil Rountree Jr. (Win)  \r\nJun 2024: vs. Jiri Prochazka (Win)  \r\nNov 2023: vs. Jiri Prochazka (Win)  \r\nJul 2022: vs. Sean Strickland (Win)",
+    "is_active": true,
+    "weight_class": "LIGHT_HEAVYWEIGHT",
+    "p4p_ranking": 8
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 13,
+  "fields": {
+    "name": "Alexander Volkanovski",
+    "martial_art": "MMA",
+    "record": "27-4-0",
+    "strengths": "High fight IQ, elite cardio, well-rounded striking, strong takedown defense",
+    "weaknesses": "Susceptible to power strikers, recent KO losses",
+    "bio": "Alexander \"The Great\" Volkanovski is a two-time UFC Featherweight Champion renowned for his technical prowess and relentless pace. After a brief stint in the lightweight division, he returned to featherweight and reclaimed the title by defeating Diego Lopes at UFC 314 in April 2025. Volkanovski is recognized for his strategic approach and adaptability inside the octagon. He has expressed interest in defending his title against rising contenders like Movsar Evloev later this year.",
+    "photo": "fighters/VOLKANOVSKI_ALEXANDER_L_BELT_02-17.png",
+    "striking": 90,
+    "grappling": 85,
+    "stamina": 95,
+    "defense": 90,
+    "speed": 85,
+    "video_id": "TraJzOvx_34",
+    "detailed_stats": {
+      "height (CM)": 168,
+      "reach (CM)": 182,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 6.18,
+      "Takedown Accuracy": 34,
+      "Submission Average Per 15Min": 0.2
+    },
+    "recent_fights": "Apr 2025: vs. Diego Lopes (Win)  \r\nFeb 2024: vs. Ilia Topuria (Loss)  \r\nOct 2023: vs. Islam Makhachev (Loss)  \r\nJul 2023: vs. Yair Rodríguez (Win)  \r\nFeb 2023: vs. Islam Makhachev (Loss)",
+    "is_active": true,
+    "weight_class": "FEATHERWEIGHT",
+    "p4p_ranking": 9
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 14,
+  "fields": {
+    "name": "Alexandre Pantoja",
+    "martial_art": "MMA",
+    "record": "29-5-0​",
+    "strengths": "Elite grappling, submission skills, relentless pace, durability, championship experience",
+    "weaknesses": "Striking defense, susceptible to high-volume strikers",
+    "bio": "Alexandre \"The Cannibal\" Pantoja is the reigning UFC Flyweight Champion, known for his aggressive grappling and submission prowess. He captured the title by defeating Brandon Moreno via split decision at UFC 290 in July 2023. Since then, Pantoja has successfully defended his title against top contenders, including Brandon Royval, Steve Erceg, and Kai Asakura. His journey from working as an Uber Eats delivery driver during the COVID-19 pandemic to becoming a UFC champion is a testament to his resilience and dedication.",
+    "photo": "fighters/PANTOJA_ALEXANDRE_L_BELT_12-07.png",
+    "striking": 80,
+    "grappling": 90,
+    "stamina": 90,
+    "defense": 85,
+    "speed": 85,
+    "video_id": "bCV4BCGdqE8",
+    "detailed_stats": {
+      "height (CM)": 165,
+      "reach (CM)": 170,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.41,
+      "Takedown Accuracy": 44,
+      "Submission Average Per 15Min": 1.0
+    },
+    "recent_fights": "Dec 2024: vs. Kai Asakura (Win)  \r\nMay 2024: vs. Steve Erceg (Win)  \r\nDec 2023: vs. Brandon Royval (Win)  \r\nJul 2023: vs. Brandon Moreno (Win)  \r\nJul 2022: vs. Alex Perez (Win)",
+    "is_active": true,
+    "weight_class": "FLYWEIGHT",
+    "p4p_ranking": 10
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 15,
+  "fields": {
+    "name": "Tom Aspinall",
+    "martial_art": "MMA",
+    "record": "15-3-0",
+    "strengths": "Explosive striking, elite grappling, rapid finishes, composure under pressure, athleticism",
+    "weaknesses": "Limited experience in championship rounds, past knee injury",
+    "bio": "Tom Aspinall is a British mixed martial artist competing in the UFC's heavyweight division. Known for his explosive power and quick finishes, Aspinall holds the record for the shortest average fight time in UFC history (minimum five fights) at just over two minutes per bout. He captured the interim UFC Heavyweight Championship by defeating Sergei Pavlovich via first-round knockout at UFC 295 in November 2023. Aspinall successfully defended his interim title against Curtis Blaydes with another first-round knockout at UFC 304 in July 2024. As of April 2025, he is in discussions for a title unification bout with reigning champion Jon Jones.",
+    "photo": "fighters/ASPINALL_TOM_BELT_L_07-27.png",
+    "striking": 90,
+    "grappling": 85,
+    "stamina": 80,
+    "defense": 85,
+    "speed": 85,
+    "video_id": "k5d4gkKz3xY",
+    "detailed_stats": {
+      "height (CM)": 196,
+      "reach (CM)": 198,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 8.07,
+      "Takedown Accuracy": 100,
+      "Submission Average Per 15Min": 2.0
+    },
+    "recent_fights": "Jul 2024: vs. Curtis Blaydes (Win)  \r\nNov 2023: vs. Sergei Pavlovich (Win)  \r\nJul 2023: vs. Marcin Tybura (Win)  \r\nJul 2022: vs. Curtis Blaydes (Loss)  \r\nMar 2022: vs. Alexander Volkov (Win)",
+    "is_active": true,
+    "weight_class": "HEAVYWEIGHT",
+    "p4p_ranking": 11
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 16,
+  "fields": {
+    "name": "Max Holloway",
+    "martial_art": "MMA",
+    "record": "26-8-0​",
+    "strengths": "Exceptional volume striking, elite cardio, durability, high fight IQ, championship experience",
+    "weaknesses": "Limited knockout power, susceptibility to leg kicks, challenges against elite wrestlers",
+    "bio": "Max \"Blessed\" Holloway is a former UFC Featherweight Champion renowned for his relentless pace and striking accuracy. Holding the record for the most significant strikes landed in UFC history, Holloway has secured notable victories over fighters like José Aldo, Brian Ortega, and Frankie Edgar. In April 2024, he claimed the BMF title by knocking out Justin Gaethje at UFC 300. However, he suffered his first career knockout loss to Ilia Topuria at UFC 308 in October 2024. As of April 2025, Holloway is ranked #2 in the featherweight division and is contemplating a return to the lightweight division.",
+    "photo": "fighters/HOLLOWAY_MAX_L_04-13.png",
+    "striking": 95,
+    "grappling": 80,
+    "stamina": 95,
+    "defense": 85,
+    "speed": 90,
+    "video_id": "5oDsN9s9-yE",
+    "detailed_stats": {
+      "height (CM)": 180,
+      "reach (CM)": 175,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 7.16,
+      "Takedown Accuracy": 83,
+      "Submission Average Per 15Min": 0.3
+    },
+    "recent_fights": "Oct 2024: vs. Ilia Topuria (Loss)  \r\nApr 2024: vs. Justin Gaethje (Win)  \r\nAug 2023: vs. Chan Sung Jung (Win)  \r\nApr 2023: vs. Arnold Allen (Win)  \r\nJul 2022: vs. Alexander Volkanovski (Loss)",
+    "is_active": true,
+    "weight_class": "LIGHTWEIGHT",
+    "p4p_ranking": 12
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 17,
+  "fields": {
+    "name": "Sean O'Malley",
+    "martial_art": "MMA",
+    "record": "18-2-0 (1 NC)",
+    "strengths": "Dynamic striking, unorthodox movement, high fight IQ, knockout power, creative offense",
+    "weaknesses": "Grappling defense, susceptibility to leg kicks, experience against elite wrestlers",
+    "bio": "Sean \"Suga\" O'Malley is an American mixed martial artist competing in the UFC's bantamweight division. Known for his flashy striking and charismatic personality, O'Malley quickly rose through the ranks with highlight-reel knockouts. He captured the UFC Bantamweight Championship by defeating Aljamain Sterling via second-round knockout at UFC 292 in August 2023. After a successful title defense against Marlon Vera at UFC 299 in March 2024, O'Malley lost the belt to Merab Dvalishvili by unanimous decision at UFC 306 in September 2024. Determined to reclaim his title, O'Malley is scheduled for a rematch against Dvalishvili at UFC 316 on June 8, 2025.",
+    "photo": "fighters/sean-omalley-poses-portrait-ufc-838559591.png",
+    "striking": 90,
+    "grappling": 75,
+    "stamina": 85,
+    "defense": 80,
+    "speed": 90,
+    "video_id": "AE7ONNBYrc8",
+    "detailed_stats": {
+      "height (CM)": 180,
+      "reach (CM)": 183,
+      "stance": "Switch",
+      "Significant Strikes Landed Per Min": 6.7,
+      "Takedown Accuracy": 61,
+      "Submission Average Per 15Min": 0.3
+    },
+    "recent_fights": "Sep 2024: vs. Merab Dvalishvili (Loss)  \r\nMar 2024: vs. Marlon Vera (Win)  \r\nAug 2023: vs. Aljamain Sterling (Win)  \r\nOct 2022: vs. Petr Yan (Win)  \r\nJul 2022: vs. Pedro Munhoz (No Contest)",
+    "is_active": true,
+    "weight_class": "BANTAMWEIGHT",
+    "p4p_ranking": 13
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 18,
+  "fields": {
+    "name": "Charles Oliveira",
+    "martial_art": "MMA",
+    "record": "35-10-0 (1 NC)​",
+    "strengths": "Elite submission skills, aggressive striking, high fight IQ, resilience, record-breaking finishing ability",
+    "weaknesses": "Susceptibility to early pressure, occasional defensive lapses, challenges against top-tier wrestlers",
+    "bio": "Charles \"Do Bronx\" Oliveira is a Brazilian mixed martial artist competing in the UFC's lightweight division. Renowned for his exceptional Brazilian Jiu-Jitsu skills, Oliveira holds the UFC records for most submission wins (16) and most finishes (20) . He captured the vacant UFC Lightweight Championship by defeating Michael Chandler at UFC 262 in May 2021. Despite being stripped of the title for missing weight at UFC 274, Oliveira continued to demonstrate his prowess with victories over top contenders. As of April 2025, he remains a leading figure in the lightweight division, known for his dynamic fighting style and resilience .",
+    "photo": "fighters/yv638w34tk5b1-removebg-preview.png",
+    "striking": 85,
+    "grappling": 95,
+    "stamina": 85,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "5oDsN9s9-yE",
+    "detailed_stats": {
+      "height (CM)": 178,
+      "reach (CM)": 188,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 3.54,
+      "Takedown Accuracy": 40,
+      "Submission Average Per 15Min": 2.8
+    },
+    "recent_fights": "Nov 2024: vs. Michael Chandler (Win)  \r\nApr 2024: vs. Arman Tsarukyan (Loss)  \r\nJun 2023: vs. Beneil Dariush (Win)  \r\nOct 2022: vs. Islam Makhachev (Loss)  \r\nMay 2022: vs. Justin Gaethje (Win)",
+    "is_active": true,
+    "weight_class": "LIGHTWEIGHT",
+    "p4p_ranking": 14
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 19,
+  "fields": {
+    "name": "Arman Tsarukyan",
+    "martial_art": "MMA",
+    "record": "22-3-0​",
+    "strengths": "High-level wrestling, relentless pace, technical striking, strong top control, excellent cardio",
+    "weaknesses": "Limited submission finishes, challenges against elite grapplers, occasional defensive lapses",
+    "bio": "Arman \"Ahalkalakets\" Tsarukyan is an Armenian-born mixed martial artist competing in the UFC's lightweight division. Known for his high-level wrestling and relentless pace, Tsarukyan has established himself as a top contender. He holds notable victories over fighters like Beneil Dariush and Charles Oliveira. Tsarukyan was scheduled to challenge Islam Makhachev for the UFC Lightweight Championship at UFC 311 in January 2025 but had to withdraw due to a back injury. As of April 2025, he is on a four-fight winning streak and remains a prominent figure in the lightweight division.",
+    "photo": "fighters/TSARUKYAN_ARMAN_L_01-18.png",
+    "striking": 85,
+    "grappling": 90,
+    "stamina": 90,
+    "defense": 85,
+    "speed": 85,
+    "video_id": "-isaq48sObg",
+    "detailed_stats": {
+      "height (CM)": 170,
+      "reach (CM)": 184,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 3.49,
+      "Takedown Accuracy": 37,
+      "Submission Average Per 15Min": 0.3
+    },
+    "recent_fights": "Jan 2025: vs. Islam Makhachev (Cancelled)  \r\nApr 2024: vs. Charles Oliveira (Win)  \r\nDec 2023: vs. Beneil Dariush (Win)  \r\nJun 2023: vs. Joaquim Silva (Win)  \r\nDec 2022: vs. Damir Ismagulov (Win)",
+    "is_active": true,
+    "weight_class": "LIGHTWEIGHT",
+    "p4p_ranking": 15
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 24,
+  "fields": {
+    "name": "Colby Covington",
+    "martial_art": "MMA",
+    "record": "17-5-0",
+    "strengths": "Elite wrestling, relentless cardio, high-volume pressure, durability",
+    "weaknesses": "Limited knockout power, susceptibility to submissions",
+    "bio": "Colby 'Chaos' Covington is an American mixed martial artist competing in the UFC's welterweight division. Known for his trash-talking persona and relentless wrestling style, Covington has been a top contender for years. He won the interim UFC Welterweight Championship in 2018 but has yet to secure the undisputed title, losing to Kamaru Usman twice and Leon Edwards in recent years. As of April 2025, he is scheduled to face Joaquin Buckley at UFC on ESPN 63 on December 14, 2024.",
+    "photo": "fighters/COVINGTON_COLBY_L_12-14.png",
+    "striking": 75,
+    "grappling": 90,
+    "stamina": 95,
+    "defense": 80,
+    "speed": 80,
+    "video_id": "ZqK92ciz4S8",
+    "detailed_stats": {
+      "height (CM)": 180,
+      "reach (CM)": 183,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.02,
+      "Takedown Accuracy": 38,
+      "Submission Average Per 15Min": 0.1
+    },
+    "recent_fights": "Dec 2024: vs. Joaquin Buckley (Loss)\r\nDec 2023: vs. Leon Edwards (Loss)\r\nMar 2022: vs. Jorge Masvidal (Win)\r\nSep 2019: vs. Robbie Lawler (Win)\r\nJun 2018: vs. Rafael dos Anjos (Win)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 25,
+  "fields": {
+    "name": "Ian Machado Garry",
+    "martial_art": "MMA",
+    "record": "15-1-0",
+    "strengths": "Technical striking, high fight IQ, undefeated streak, composure under pressure",
+    "weaknesses": "Limited experience against top-tier grapplers, susceptibility to pressure fighters",
+    "bio": "Ian 'The Future' Machado Garry is an Irish mixed martial artist competing in the UFC's welterweight division. Known for his technical striking and composure, Garry quickly rose through the ranks with an undefeated streak. He faced his first professional loss against Shavkat Rakhmonov at UFC 310 in December 2024. Garry is scheduled to face Carlos Prates on April 26, 2025, aiming to reassert himself as a top contender.",
+    "photo": "fighters/GARRY_IAN_L_06-29.png",
+    "striking": 88,
+    "grappling": 80,
+    "stamina": 90,
+    "defense": 85,
+    "speed": 90,
+    "video_id": "XG4Hhd4rqhA",
+    "detailed_stats": {
+      "height (CM)": 191,
+      "reach (CM)": 193,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 5.2,
+      "Takedown Accuracy": 45,
+      "Submission Average Per 15Min": 0.3
+    },
+    "recent_fights": "Dec 2024: vs. Shavkat Rakhmonov (Loss)\r\nJun 2024: vs. Michael Page (Win)\r\nFeb 2024: vs. Geoff Neal (Win)\r\nAug 2023: vs. Neil Magny (Win)\r\nMar 2023: vs. Song Kenan (Win)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 26,
+  "fields": {
+    "name": "Jack Della Maddalena",
+    "martial_art": "MMA",
+    "record": "17-2-0",
+    "strengths": "Powerful boxing, high fight IQ, durability, finishing ability",
+    "weaknesses": "Limited grappling experience, susceptibility to takedowns",
+    "bio": "Jack Della Maddalena is an Australian mixed martial artist competing in the UFC's welterweight division. Known for his powerful boxing and finishing ability, Della Maddalena has quickly climbed the ranks with notable victories over Kevin Holland and Gilbert Burns. He is scheduled to face Belal Muhammad at UFC 315 on May 10, 2025, in a bout that could determine the next title contender.",
+    "photo": "fighters/DELLA_MADDALENA_JACK_L_09-16.png",
+    "striking": 92,
+    "grappling": 75,
+    "stamina": 88,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "XG4Hhd4rqhA",
+    "detailed_stats": {
+      "height (CM)": 180,
+      "reach (CM)": 185,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 5.3,
+      "Takedown Accuracy": 50,
+      "Submission Average Per 15Min": 0.2
+    },
+    "recent_fights": "Mar 2024: vs. Gilbert Burns (Win)\r\nSep 2023: vs. Kevin Holland (Win)\r\nJul 2023: vs. Bassil Hafez (Win)\r\nFeb 2023: vs. Randy Brown (Win)\r\nNov 2022: vs. Danny Roberts (Win)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 32,
+  "fields": {
+    "name": "Sean Brady",
+    "martial_art": "MMA",
+    "record": "18-1-0",
+    "strengths": "Elite wrestling, top control, submission skills, cardio",
+    "weaknesses": "Striking needs development, limited knockout power",
+    "bio": "Sean Brady is an American mixed martial artist competing in the UFC's welterweight division. Known for his dominant wrestling and grappling, Brady entered the UFC undefeated and quickly established himself as a top contender. As of April 2025, he is ranked #1 in the UFC welterweight division.[1] His recent victory over former champion Leon Edwards showcased his potential to capture the title.[13]",
+    "photo": "fighters/BRADY_SEAN_L_09-07.png",
+    "striking": 78,
+    "grappling": 92,
+    "stamina": 90,
+    "defense": 85,
+    "speed": 75,
+    "video_id": "None",
+    "detailed_stats": "{\"height (CM)\": 178, \"reach (CM)\": 183, \"stance\": \"Orthodox\", \"Significant Strikes Landed Per Min\": 3.3, \"Takedown Accuracy\": 50, \"Submission Average Per 15Min\": 1.1}",
+    "recent_fights": "Mar 2025: vs. Leon Edwards (Win)\r\nOct 2022: vs. Belal Muhammad (Loss)\r\nNov 2021: vs. Michael Chiesa (Win)\r\nMar 2021: vs. Jake Matthews (Win)\r\nAug 2020: vs. Christian Aguilera (Win)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 33,
+  "fields": {
+    "name": "Petr Yan",
+    "martial_art": "MMA",
+    "record": "18-5-0",
+    "strengths": "Precise striking, knockout power, strong takedown defense, durability",
+    "weaknesses": "Can be overaggressive, susceptible to leg kicks",
+    "bio": "Petr 'No Mercy' Yan is a Russian mixed martial artist competing in the UFC's bantamweight division. A former UFC Bantamweight Champion, Yan is known for his aggressive boxing style and relentless pressure. As of April 2025, he is ranked #2 in the UFC bantamweight division.[1] He is scheduled to face Merab Dvalishvili at UFC 316 on June 8, 2025.[2]",
+    "photo": "fighters/YAN_PETR_L_11-23.png",
+    "striking": 90,
+    "grappling": 85,
+    "stamina": 90,
+    "defense": 82,
+    "speed": 88,
+    "video_id": "None",
+    "detailed_stats": "{\"height (CM)\": 170, \"reach (CM)\": 170, \"stance\": \"Orthodox\", \"Significant Strikes Landed Per Min\": 5.27, \"Takedown Accuracy\": 61, \"Submission Average Per 15Min\": 0.2}",
+    "recent_fights": "Mar 2025: vs. Song Yadong (Win)\r\nOct 2022: vs. Sean O'Malley (Loss)\r\nApr 2022: vs. Aljamain Sterling (Loss)\r\nOct 2021: vs. Aljamain Sterling (Loss)\r\nMar 2021: vs. Aljamain Sterling (Win)",
+    "is_active": true,
+    "weight_class": "BANTAMWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 34,
+  "fields": {
+    "name": "Yair Rodriguez",
+    "martial_art": "MMA",
+    "record": "16-5-0",
+    "strengths": "Dynamic striking, creative kicks, agility, cardio",
+    "weaknesses": "Wrestling defense can be inconsistent, striking can be wild",
+    "bio": "Yair 'El Pantera' Rodriguez is a Mexican mixed martial artist competing in the UFC's featherweight division. Known for his spectacular and unpredictable striking attacks, Rodriguez has been a top contender for years. As of April 2025, he is ranked #4 in the UFC featherweight division.[1] He recently defeated Patrício Pitbull at UFC 314.[14]",
+    "photo": "fighters/RODRIGUEZ_YAIR_L_04-12.png",
+    "striking": 88,
+    "grappling": 80,
+    "stamina": 90,
+    "defense": 78,
+    "speed": 92,
+    "video_id": "None",
+    "detailed_stats": "{\"height (CM)\": 180, \"reach (CM)\": 183, \"stance\": \"Orthodox\", \"Significant Strikes Landed Per Min\": 3.88, \"Takedown Accuracy\": 40, \"Submission Average Per 15Min\": 0.4}",
+    "recent_fights": "Apr 2025: vs. Patrício Pitbull (Win)\r\nJul 2024: vs. Alexander Volkanovski (Loss)\r\nFeb 2024: vs. Brian Ortega (Loss)\r\nJul 2022: vs. Brian Ortega (Win)\r\nOct 2021: vs. Max Holloway (Loss)",
+    "is_active": true,
+    "weight_class": "FEATHERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 35,
+  "fields": {
+    "name": "Leon Edwards",
+    "martial_art": "MMA",
+    "record": "22-5-0",
+    "strengths": "Technical striking, strong clinch game, improved wrestling defense, composure",
+    "weaknesses": "Can be hesitant at times, knockout power not always evident",
+    "bio": "Leon 'Rocky' Edwards is a Jamaican-British mixed martial artist competing in the UFC's welterweight division. The current UFC Welterweight Champion [1], Edwards is known for his well-rounded skillset and calm demeanor in the octagon. He is scheduled to face Colby Covington at UFC 316 on June 8, 2025.[2] His recent loss to Sean Brady at UFC London marked a significant shift in the welterweight landscape.[13]",
+    "photo": "fighters/EDWARDS_LEON_L_03-22.png",
+    "striking": 85,
+    "grappling": 86,
+    "stamina": 90,
+    "defense": 88,
+    "speed": 85,
+    "video_id": "None",
+    "detailed_stats": "{\"height (CM)\": 183, \"reach (CM)\": 188, \"stance\": \"Southpaw\", \"Significant Strikes Landed Per Min\": 2.60, \"Takedown Accuracy\": 30, \"Submission Average Per 15Min\": 0.3}",
+    "recent_fights": "Mar 2025: vs. Sean Brady (Loss)\r\nDec 2024: vs. Colby Covington (Win)\r\nMar 2024: vs. Kamaru Usman (Win)\r\nAug 2022: vs. Kamaru Usman (Win)\r\nJun 2021: vs. Nate Diaz (Win)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 37,
+  "fields": {
+    "name": "Kamaru Usman",
+    "martial_art": "MMA",
+    "record": "20-4-0",
+    "strengths": "Elite wrestling, powerful striking, high fight IQ, relentless pressure",
+    "weaknesses": "Knees prone to injury, age-related decline in speed",
+    "bio": "Kamaru 'The Nigerian Nightmare' Usman is a Nigerian-American mixed martial artist and former UFC Welterweight Champion. Dominating the division with his wrestling and striking, Usman defended his title five times before losing to Leon Edwards at UFC 278. He faced Edwards again at UFC 286 but was defeated via decision. As of April 2025, Usman is contemplating a move to middleweight.",
+    "photo": "fighters/USMAN_KAMARU_L_10-21.png",
+    "striking": 85,
+    "grappling": 95,
+    "stamina": 90,
+    "defense": 90,
+    "speed": 80,
+    "video_id": "eY52Zsg-KVI",
+    "detailed_stats": {
+      "height (CM)": 183,
+      "reach (CM)": 193,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.66,
+      "Takedown Accuracy": 47,
+      "Submission Average Per 15Min": 0.2
+    },
+    "recent_fights": "Dec 2024: vs. Leon Edwards (Loss)\nMar 2024: vs. Khamzat Chimaev (Loss)\nAug 2023: vs. Jorge Masvidal (Win)\nMar 2023: vs. Leon Edwards (Loss)\nAug 2022: vs. Leon Edwards (Loss)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 38,
+  "fields": {
+    "name": "Carlos Prates",
+    "martial_art": "MMA",
+    "record": "21-6-0",
+    "strengths": "Exceptional knockout power, high striking accuracy, durability, and Muay Thai expertise\r\nPrates has demonstrated a 4-0 record in the UFC with all wins by knockout, earning four Performance of the Night bonuses. His recent knockouts against Neil Magny, Li Jingliang, Charles Radtke, and Trevin Giles highlight his striking prowess, with seven knockdowns in four fights",
+    "weaknesses": "Limited grappling defense, potential stamina concerns in longer fights, smoking habit\r\nDespite being a BJJ black belt, Prates prefers striking and has faced criticism for defending only 11 takedown attempts in his UFC career. His admission of smoking half a pack a day (X posts) and past struggles with nutrition could impact stamina, especially in five-round main events like his upcoming fight against Ian Garry.",
+    "bio": "Carlos \"The Nightmare\" Prates is a Brazilian professional mixed martial artist born on August 17, 1993, in Taubaté, São Paulo. He began training Muay Thai at 15 to overcome troubled teenage years and later earned a BJJ black belt. After an early 5-4 MMA record, he honed his skills in Thailand, winning titles like Bangla Stadium Champion and Glory of Heroes Champ. Joining the UFC via Dana White's Contender Series in 2023, he debuted with a knockout of Trevin Giles in February 2024 and went 4-0 in his rookie year, earning Newcomer of the Year honors. Known for his stoic demeanor and knockout power, he’s ranked #13 in the welterweight division and headlines UFC Kansas City on April 26, 2025, against Ian Garry.",
+    "photo": "fighters/PRATES_CARLOS_L_08-17.png",
+    "striking": 90,
+    "grappling": 60,
+    "stamina": 70,
+    "defense": 75,
+    "speed": 85,
+    "video_id": "",
+    "detailed_stats": {
+      "height (CM)": 185,
+      "reach (CM)": 78,
+      "stance": "Switch",
+      "Significant Strikes Landed Per Min": 4.39,
+      "Takedown Accuracy": 100,
+      "Submission Average Per 15Min": 0.44
+    },
+    "recent_fights": "Win vs. Neil Magny (Nov 9, 2024, KO, Round 1, 4:50)\r\nWin vs. Li Jingliang (Aug 17, 2024, KO, Round 2, 4:02)\r\nWin vs. Charles Radtke (Jun 8, 2024, KO, Round 1, 4:47)\r\nWin vs. Trevin Giles (Feb 10, 2024, KO, Round 2, 4:03)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 39,
+  "fields": {
+    "name": "Brandon \"Raw Dawg\" Royval",
+    "martial_art": "MMA",
+    "record": "17-7-0",
+    "strengths": "Elite grappling, high-pressure striking, scrambles effectively, resilience, versatility in submissions",
+    "weaknesses": "Susceptibility to early knockouts, inconsistent striking defense, cardio in five-round fights",
+    "bio": "Brandon Royval is an American professional mixed martial artist competing in the UFC Flyweight division. Known for his dynamic grappling and aggressive style, he earned the nickname \"Raw Dawg\" and has climbed to the #1 ranking in the flyweight division as of February 2024. Royval made his UFC debut in May 2020 with a submission win over Tim Elliott, earning Fight of the Night honors. Notable victories include wins over Kai Kara-France, Rogerio Bontorin, Matt Schnell, Brandon Moreno (in a rematch), and Tatsuro Taira. His losses came against top contenders like Alexandre Pantoja and Brandon Moreno in earlier bouts. After pulling out of a March 2025 fight against Manel Kape due to concussions, he is scheduled to face Kape again on June 28, 2025, at UFC 317.",
+    "photo": "fighters/71607252Fprofile-galery252Ffullbodyleft-picture252FROYVAL_BRANDON_L_08-21.png",
+    "striking": 85,
+    "grappling": 90,
+    "stamina": 80,
+    "defense": 70,
+    "speed": 85,
+    "video_id": "",
+    "detailed_stats": {
+      "height (CM)": 175,
+      "reach (CM)": 175,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.5,
+      "Takedown Accuracy": 55,
+      "Submission Average Per 15Min": 1.2
+    },
+    "recent_fights": "Oct 2024: vs. Tatsuro Taira (Win)\r\nFeb 2024: vs. Brandon Moreno (Win)\r\nDec 2023: vs. Alexandre Pantoja (Loss)\r\nMay 2022: vs. Matt Schnell (Win)\r\nJan 2022: vs. Rogerio Bontorin (Win)",
+    "is_active": true,
+    "weight_class": "FLYWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 40,
+  "fields": {
+    "name": "Brandon Moreno",
+    "martial_art": "MMA",
+    "record": "23-8-2",
+    "strengths": "Exceptional grappling and submission skills, relentless pace, resilience, strong heart",
+    "weaknesses": "Inconsistent striking power, occasional vulnerability against elite wrestlers",
+    "bio": "Brandon \"The Assassin Baby\" Moreno is a dynamic Mexican mixed martial artist who has defined the UFC Flyweight division with his heart and tenacity. Known for his thrilling trilogy with Deiveson Figueiredo and a historic championship run, Moreno has become one of the fan favorites in the sport. His ability to recover from adversity and finish fights with slick submissions or scrambles makes him a true underdog fighter turned champion.",
+    "photo": "fighters/MORENO_BRANDON_L_03-29.png",
+    "striking": 80,
+    "grappling": 90,
+    "stamina": 85,
+    "defense": 85,
+    "speed": 85,
+    "video_id": "",
+    "detailed_stats": {
+      "height (CM)": 163,
+      "reach (CM)": 172,
+      "stance": "Orthodox",
+      "Significant Strikes Landed Per Min": 4.25,
+      "Takedown Accuracy": 42,
+      "Submission Average Per 15Min": 0.7
+    },
+    "recent_fights": "Jul 2023: vs. Alexandre Pantoja (Loss)  \r\nFeb 2023: vs. Deiveson Figueiredo (Win)  \r\nNov 2022: vs. Deiveson Figueiredo (Win)  \r\nMay 2022: vs. Askar Askarov (Win)",
+    "is_active": true,
+    "weight_class": "FLYWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fighter",
+  "pk": 41,
+  "fields": {
+    "name": "Joaquin Buckley",
+    "martial_art": "MMA",
+    "record": "21-6-0",
+    "strengths": "Explosive striking power, dynamic athleticism, and finishing ability. Known for his viral spinning back kick knockout and relentless pressure in the octagon.",
+    "weaknesses": "Limited experience in five-round fights and sometimes exposed defensive vulnerabilities when facing high-level grapplers.",
+    "bio": "Nicknamed \"New Mansa,\" Joaquin Buckley is an American mixed martial artist from St. Louis, Missouri. Beginning his professional career in 2014 and competing in organizations like Shamrock FC, Bellator MMA, and LFA, he gained widespread recognition after his jaw-dropping spinning back kick knockout of Impa Kasanganay in 2020. Now competing in the UFC welterweight division, Buckley has quickly become a dangerous contender, winning multiple Performance of the Night bonuses and aiming to use big victories against top opponents—such as his recent win over Colby Covington—as a springboard toward a title shot.",
+    "photo": "fighters/BUCKLEY_JOAQUIN_L_05-11.png",
+    "striking": 90,
+    "grappling": 80,
+    "stamina": 85,
+    "defense": 80,
+    "speed": 85,
+    "video_id": "",
+    "detailed_stats": {
+      "height (CM)": 178,
+      "reach (CM)": 193,
+      "stance": "Southpaw",
+      "Significant Strikes Landed Per Min": 4.5,
+      "Takedown Accuracy": 35,
+      "Submission Average Per 15Min": 0.0
+    },
+    "recent_fights": "Dec 14, 2024: vs. Colby Covington (Win, TKO – doctor's stoppage, Round 3, 4:42)\r\nOct 5, 2024: vs. Stephen Thompson (Win, KO via punch, Round 3, 2:17)\r\nMay 11, 2024: vs. Nursulton Ruziboev (Win, Unanimous Decision, 3 Rounds)\r\nMar 30, 2024: vs. Vicente Luque (Win, TKO via punches, Round 2, 3:17)\r\nOct 7, 2023: vs. Alex Morono (Win, Unanimous Decision, 3 Rounds)",
+    "is_active": true,
+    "weight_class": "WELTERWEIGHT",
+    "p4p_ranking": null
+  }
+},
+{
+  "model": "fighters.fightcard",
+  "pk": 1,
+  "fields": {
+    "fighter1": 11,
+    "fighter2": 26,
+    "event_name": "UFC 315: Muhammad vs. Della Maddalena",
+    "event_date": "2025-05-10T07:30:00Z",
+    "predicted_winner": "Belal Muhammad"
+  }
+},
+{
+  "model": "fighters.fightcard",
+  "pk": 2,
+  "fields": {
+    "fighter1": 38,
+    "fighter2": 25,
+    "event_name": "UFC Fight Night: Prates vs. Garry",
+    "event_date": "2025-04-26T22:00:00Z",
+    "predicted_winner": "Ian Machado Garry"
+  }
+},
+{
+  "model": "fighters.fightcard",
+  "pk": 3,
+  "fields": {
+    "fighter1": 8,
+    "fighter2": 17,
+    "event_name": "UFC 316: Dvalishvili vs. O'Malley 2",
+    "event_date": "2025-06-07T22:00:00Z",
+    "predicted_winner": "Merab Dvalishvili"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 1,
+  "fields": {
+    "fight_card": 2,
+    "chosen_fighter": 25,
+    "voted_at": "2025-04-25T13:16:30.617Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 2,
+  "fields": {
+    "fight_card": 1,
+    "chosen_fighter": 26,
+    "voted_at": "2025-04-25T13:16:30.617Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 3,
+  "fields": {
+    "fight_card": 2,
+    "chosen_fighter": 38,
+    "voted_at": "2025-04-25T13:16:42.319Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 4,
+  "fields": {
+    "fight_card": 2,
+    "chosen_fighter": 38,
+    "voted_at": "2025-04-25T13:20:10.124Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 5,
+  "fields": {
+    "fight_card": 1,
+    "chosen_fighter": 11,
+    "voted_at": "2025-04-25T13:20:24.665Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 6,
+  "fields": {
+    "fight_card": 1,
+    "chosen_fighter": 26,
+    "voted_at": "2025-04-25T13:20:38.861Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 7,
+  "fields": {
+    "fight_card": 1,
+    "chosen_fighter": 11,
+    "voted_at": "2025-04-25T13:45:05.531Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 8,
+  "fields": {
+    "fight_card": 3,
+    "chosen_fighter": 17,
+    "voted_at": "2025-04-25T13:45:20.496Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 9,
+  "fields": {
+    "fight_card": 3,
+    "chosen_fighter": 8,
+    "voted_at": "2025-04-25T13:45:35.212Z"
+  }
+},
+{
+  "model": "fighters.vote",
+  "pk": 10,
+  "fields": {
+    "fight_card": 3,
+    "chosen_fighter": 8,
+    "voted_at": "2025-04-25T13:45:49.169Z"
+  }
+}
+]

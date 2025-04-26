@@ -1,0 +1,27 @@
+<!-- fighters/templates/fighters/search.html -->
+{% extends 'fighters/base.html' %}
+{% load static %}
+{% block content %}
+<h1 class="text-neon-green mb-4">Search Results for "{{ query }}"</h1>
+<div class="row">
+    {% for fighter in fighters %}
+    <div class="col-md-4 mb-4">
+        <div class="card bg-dark border-neon h-100 animate-card">
+            <div class="card-body">
+                {% if fighter.photo %}
+                    <img src="{{ fighter.photo.url }}" alt="{{ fighter.name }}" class="img-fluid rounded mb-3 fighter-photo">
+                {% else %}
+                    <div class="fighter-photo-placeholder mb-3">No Image</div>
+                {% endif %}
+                <h5 class="card-title text-light">{{ fighter.name }}</h5>
+                <p class="card-text text-neon-green">Martial Art: {{ fighter.martial_art }}</p>
+                <p class="card-text text-neon-green">Record: {{ fighter.record }}</p>
+                <a href="{% url 'fighters:fighter_detail' fighter.pk %}" class="btn btn-neon-green w-100">Analyze</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-muted">No fighters found for "{{ query }}".</p>
+    {% endfor %}
+</div>
+{% endblock %}

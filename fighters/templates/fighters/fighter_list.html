@@ -1,0 +1,164 @@
+<!-- fighters/templates/fighters/fighter_list.html -->
+{% extends 'fighters/base.html' %}
+{% load static %}
+{% block content %}
+<div class="relative min-h-screen">
+    <!-- Particle Background -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+    <div class="container mx-auto p-6 text-white relative z-10">
+        <h1 class="text-neon-green mb-8 text-5xl md:text-6xl font-bold text-center animate-pulse-slow font-mono tracking-wider">Fighter Database</h1>
+
+        <!-- Filter Section -->
+        <div class="flex items-start mb-6">
+            <!-- Toggle Button (Left-Aligned) -->
+            <button id="toggleFilter" class="bg-gradient-to-r from-neon-green to-green-700 text-black font-bold p-3 rounded-lg shadow-neon hover:from-green-500 hover:to-green-800 transition-all duration-300 transform hover:scale-105 mr-4">
+                <span class="flex items-center justify-center">
+                    <i class="fas fa-filter"></i>
+                </span>
+            </button>
+
+            <!-- Filter Panel (Hidden by Default) -->
+            <div id="filterBox" class="w-full max-w-xs bg-gray-900 bg-opacity-90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-neon animate-slide-down hidden">
+                <form method="get" class="mb-0">
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- Weight Class Filter -->
+                        <div>
+                            <label for="weight_class" class="block text-neon-green mb-1 font-mono text-xs uppercase tracking-wider">Weight Class</label>
+                            <select name="weight_class" id="weight_class" class="w-full bg-gray-800 bg-opacity-80 text-white border-neon rounded-lg p-1 text-sm focus:outline-none focus:ring-2 focus:ring-neon-green transition duration-200">
+                                <option value="">All</option>
+                                {% for class_value, class_name in weight_classes %}
+                                    <option value="{{ class_value }}" {% if selected_weight_class == class_value %}selected{% endif %}>{{ class_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <!-- P4P Ranking Filter -->
+                        <div>
+                            <label for="p4p_filter" class="block text-neon-green mb-1 font-mono text-xs uppercase tracking-wider">P4P Ranking</label>
+                            <select name="p4p_filter" id="p4p_filter" class="w-full bg-gray-800 bg-opacity-80 text-white border-neon rounded-lg p-1 text-sm focus:outline-none focus:ring-2 focus:ring-neon-green transition duration-200">
+                                <option value="">All</option>
+                                <option value="top_5" {% if selected_p4p_filter == 'top_5' %}selected{% endif %}>Top 5</option>
+                                <option value="top_10" {% if selected_p4p_filter == 'top_10' %}selected{% endif %}>Top 10</option>
+                                <option value="top_15" {% if selected_p4p_filter == 'top_15' %}selected{% endif %}>Top 15</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full mt-3 bg-neon-green text-black font-bold py-1 px-3 rounded-lg hover:bg-green-500 hover:shadow-neon transition-all duration-300 text-sm">
+                        <span class="flex items-center justify-center">
+                            <i class="fas fa-search mr-1 text-xs"></i> Apply
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Fighter List -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for fighter in fighters %}
+            <div class="card bg-gray-900 bg-opacity-90 backdrop-blur-md border-neon rounded-xl shadow-lg hover:shadow-neon-lg transition-all duration-300 transform hover:scale-105">
+                <div class="card-body p-5">
+                    <div class="relative w-full overflow-hidden rounded-lg border-4 border-neon">
+                        {% if fighter.photo %}
+                            <img src="{{ fighter.photo.url }}" alt="{{ fighter.name }}" class="w-full object-contain max-h-64 mx-auto">
+                        {% else %}
+                            <div class="w-full h-64 bg-gray-700 text-center flex items-center justify-center rounded-lg text-gray-400 italic">
+                                No Image
+                            </div>
+                        {% endif %}
+                    </div>
+                    <h5 class="text-light text-xl font-semibold mb-2 font-mono mt-4">{{ fighter.name }}</h5>
+                    <p class="text-neon-green text-sm mb-1"><i class="fas fa-fist-raised mr-2"></i> Martial Art: {{ fighter.martial_art }}</p>
+                    <p class="text-neon-green text-sm mb-1"><i class="fas fa-trophy mr-2"></i> Record: {{ fighter.record }}</p>
+                    <p class="text-neon-green text-sm mb-1"><i class="fas fa-weight mr-2"></i> Weight Class: {{ fighter.get_weight_class_display|default:"N/A" }}</p>
+                    <p class="text-neon-green text-sm mb-3"><i class="fas fa-star mr-2"></i> P4P Rank: {{ fighter.p4p_ranking|default:"Unranked" }}</p>
+                    <a href="{% url 'fighters:fighter_detail' fighter.pk %}" class="block text-center bg-gradient-to-r from-neon-green to-green-700 text-black font-bold py-2 px-4 rounded-lg shadow-neon hover:from-green-500 hover:to-green-800 transition-all duration-300 animate-pulse-button">
+                        <span class="flex items-center justify-center">
+                            <i class="fas fa-chart-line mr-2"></i> Analyze
+                        </span>
+                    </a>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-muted text-center text-lg col-span-full">No fighters found.</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Include Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize particles.js
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: '#00ff00' },
+            shape: { type: 'circle' },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            line_linked: { enable: false },
+            move: { enable: true, speed: 1, direction: 'none', random: true }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' } },
+            modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+        },
+        retina_detect: true
+    });
+
+    // Toggle Filter
+    const toggleButton = document.getElementById('toggleFilter');
+    const filterBox = document.getElementById('filterBox');
+
+    toggleButton.addEventListener('click', function() {
+        filterBox.classList.toggle('hidden');
+        toggleButton.classList.toggle('bg-gradient-to-r', !filterBox.classList.contains('hidden'));
+        toggleButton.classList.toggle('from-neon-green', !filterBox.classList.contains('hidden'));
+        toggleButton.classList.toggle('to-green-700', !filterBox.classList.contains('hidden'));
+        toggleButton.classList.toggle('hover:from-green-500', !filterBox.classList.contains('hidden'));
+        toggleButton.classList.toggle('hover:to-green-800', !filterBox.classList.contains('hidden'));
+    });
+});
+</script>
+
+<!-- Custom CSS -->
+<style>
+    .text-neon-green {
+        color: #00ff00;
+    }
+    .border-neon {
+        border-color: #00ff00;
+    }
+    .shadow-neon {
+        box-shadow: 0 0 10px #00ff00;
+    }
+    .shadow-neon-lg {
+        box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00 inset;
+    }
+    .animate-pulse-slow {
+        animation: pulse 2s infinite;
+    }
+    .animate-slide-down {
+        animation: slideDown 0.3s ease-out;
+    }
+    .animate-pulse-button {
+        animation: pulseButton 1.5s infinite;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    @keyframes slideDown {
+        from { transform: translateY(-20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes pulseButton {
+        0% { box-shadow: 0 0 5px #00ff00; }
+        50% { box-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00 inset; }
+        100% { box-shadow: 0 0 5px #00ff00; }
+    }
+</style>
+{% endblock %}

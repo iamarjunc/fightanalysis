@@ -1,0 +1,248 @@
+<!-- fighters/templates/fighters/compare.html -->
+{% extends 'fighters/base.html' %}
+{% load static %}
+{% block content %}
+<div class="relative min-h-screen">
+    <!-- Particle Background -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+    <div class="container mx-auto p-4 text-white relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold text-neon-green mb-8 text-center animate-title">Compare Fighters</h1>
+
+        <!-- Form to select fighters -->
+        <form method="post" class="max-w-lg mx-auto bg-gray-900 p-6 rounded-lg shadow-lg border-neon animate-card">
+            {% csrf_token %}
+            <div class="mb-4 relative">
+                <label for="id_fighter1" class="block text-neon-green mb-2">Fighter 1</label>
+                <input type="text" id="id_fighter1" value="{{ fighter1.name|default:'' }}" class="w-full bg-gray-800 text-white border-neon rounded p-2 focus:outline-none focus:ring-2 focus:ring-neon-green autocomplete-input" placeholder="Type to search..." autocomplete="off">
+                <input type="hidden" name="fighter1_id" id="fighter1_id" value="{{ fighter1.id|default:'' }}">
+                <div id="suggestions1" class="absolute z-10 w-full bg-gray-900 border border-neon rounded mt-1 max-h-40 overflow-y-auto hidden"></div>
+            </div>
+            <div class="mb-4 relative">
+                <label for="id_fighter2" class="block text-neon-green mb-2">Fighter 2</label>
+                <input type="text" id="id_fighter2" value="{{ fighter2.name|default:'' }}" class="w-full bg-gray-800 text-white border-neon rounded p-2 focus:outline-none focus:ring-2 focus:ring-neon-green autocomplete-input" placeholder="Type to search..." autocomplete="off">
+                <input type="hidden" name="fighter2_id" id="fighter2_id" value="{{ fighter2.id|default:'' }}">
+                <div id="suggestions2" class="absolute z-10 w-full bg-gray-900 border border-neon rounded mt-1 max-h-40 overflow-y-auto hidden"></div>
+            </div>
+            {% if form.non_field_errors %}
+                <div class="text-red-500 mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+            {% if error_message %}
+                <div class="text-red-500 mb-4">
+                    {{ error_message }}
+                </div>
+            {% endif %}
+            <button type="submit" class="w-full bg-neon-green text-black font-bold py-2 px-4 rounded hover:bg-green-500 hover:shadow-neon transition-all duration-300">
+                Compare Fighters
+            </button>
+        </form>
+
+        <!-- Comparison Results -->
+        {% if fighter1 and fighter2 %}
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Fighter 1 Card -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg border-neon animate-card">
+                    <h2 class="text-2xl font-bold text-neon-green mb-4">{{ fighter1.name }}</h2>
+                    <p class="text-sm {% if not fighter1.is_active %}text-red-500{% else %}text-neon-green{% endif %}">
+                        Status: {% if fighter1.is_active %}Active{% else %}Inactive{% endif %}
+                    </p>
+                    <img src="{% if fighter1.photo %}{{ fighter1.photo.url }}{% else %}{% static 'fighters/images/default_fighter.jpg' %}{% endif %}" alt="{{ fighter1.name }}" class="fighter-photo-large mx-auto mb-4">
+                    <p><strong class="text-neon-green"><i class="fas fa-trophy mr-2"></i>Record:</strong> {{ fighter1.record }}</p>
+                    <p><strong class="text-neon-green"><i class="fas fa-fist-raised mr-2"></i>Striking:</strong> {{ fighter1.striking }}</p>
+                    <p><strong class="text-neon-green"><i class="fas fa-lock mr-2"></i>Grappling:</strong> {{ fighter1.grappling }}</p>
+                    <p><strong class="text-neon-green"><i class="fas fa-heartbeat mr-2"></i>Stamina:</strong> {{ fighter1.stamina }}</p>
+                    <p><strong class="text-neon-green"><i class="fas fa-shield-alt mr-2"></i>Defense:</strong> {{ fighter1.defense }}</p>
+                    <p><strong class="text-neon-green"><i class="fas fa-bolt mr-2"></i>Speed:</strong> {{ fighter1.speed }}</p>
+                    <p><strong class="text-neon-green"><i class="fas fa-history mr-2"></i>Recent Fights:</strong></p>
+                    <ul class="list-disc pl-5 text-gray-300">
+                        {% for fight in fighter1.get_recent_fights %}
+                            <li>{{ fight }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!-- Fighter 2 Card -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg border-neon animate-card">
+                    <h2 class="text-2xl font-bold text-neon-red mb-4">{{ fighter2.name }}</h2>
+                    <p class="text-sm {% if not fighter2.is_active %}text-red-500{% else %}text-neon-green{% endif %}">
+                        Status: {% if fighter2.is_active %}Active{% else %}Inactive{% endif %}
+                    </p>
+                    <img src="{% if fighter2.photo %}{{ fighter2.photo.url }}{% else %}{% static 'fighters/images/default_fighter.jpg' %}{% endif %}" alt="{{ fighter2.name }}" class="fighter-photo-large mx-auto mb-4">
+                    <p><strong class="text-neon-red"><i class="fas fa-trophy mr-2"></i>Record:</strong> {{ fighter2.record }}</p>
+                    <p><strong class="text-neon-red"><i class="fas fa-fist-raised mr-2"></i>Striking:</strong> {{ fighter2.striking }}</p>
+                    <p><strong class="text-neon-red"><i class="fas fa-lock mr-2"></i>Grappling:</strong> {{ fighter2.grappling }}</p>
+                    <p><strong class="text-neon-red"><i class="fas fa-heartbeat mr-2"></i>Stamina:</strong> {{ fighter2.stamina }}</p>
+                    <p><strong class="text-neon-red"><i class="fas fa-shield-alt mr-2"></i>Defense:</strong> {{ fighter2.defense }}</p>
+                    <p><strong class="text-neon-red"><i class="fas fa-bolt mr-2"></i>Speed:</strong> {{ fighter2.speed }}</p>
+                    <p><strong class="text-neon-red"><i class="fas fa-history mr-2"></i>Recent Fights:</strong></p>
+                    <ul class="list-disc pl-5 text-gray-300">
+                        {% for fight in fighter2.get_recent_fights %}
+                            <li>{{ fight }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Prediction Result -->
+            <div class="mt-8 text-center bg-gray-900 p-6 rounded-lg shadow-lg border-neon animate-card">
+                <h2 class="text-3xl font-bold text-neon-green mb-4">Fight Prediction</h2>
+                <p class="text-lg text-gray-300">
+                    <strong class="text-neon-green">Predicted Winner:</strong> <span class="text-neon-green font-bold">{{ prediction.winner }}</span><br>
+                    <strong class="text-neon-green">Confidence:</strong> {{ prediction.confidence }}%<br>
+                    <strong class="text-neon-green">{{ fighter1.name }} Score:</strong> {{ prediction.fighter1_score }}<br>
+                    <strong class="text-neon-red">{{ fighter2.name }} Score:</strong> {{ prediction.fighter2_score }}<br>
+                    <strong class="text-neon-green">Reason:</strong> {{ prediction.reason }}
+                </p>
+            </div>
+
+            <!-- Radar Chart for Visual Comparison -->
+            <div class="mt-8 bg-gray-900 p-6 rounded-lg shadow-lg border-neon animate-card">
+                <canvas id="comparisonChart" class="max-w-full mx-auto"></canvas>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Chart.js and Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize particles.js
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: '#00ff00' },
+            shape: { type: 'circle' },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            line_linked: { enable: false },
+            move: { enable: true, speed: 1, direction: 'none', random: true }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' } },
+            modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+        },
+        retina_detect: true
+    });
+
+    // Radar Chart
+    {% if fighter1 and fighter2 %}
+        const ctx = document.getElementById('comparisonChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Striking', 'Grappling', 'Stamina', 'Defense', 'Speed'],
+                datasets: [
+                    {
+                        label: '{{ fighter1.name }}',
+                        data: [{{ fighter1.striking }}, {{ fighter1.grappling }}, {{ fighter1.stamina }}, {{ fighter1.defense }}, {{ fighter1.speed }}],
+                        fill: true,
+                        backgroundColor: 'rgba(0, 255, 0, 0.2)',
+                        borderColor: 'rgb(0, 255, 0)',
+                        pointBackgroundColor: 'rgb(0, 255, 0)',
+                        pointBorderColor: '#000',
+                        pointHoverBackgroundColor: '#000',
+                        pointHoverBorderColor: 'rgb(0, 255, 0)'
+                    },
+                    {
+                        label: '{{ fighter2.name }}',
+                        data: [{{ fighter2.striking }}, {{ fighter2.grappling }}, {{ fighter2.stamina }}, {{ fighter2.defense }}, {{ fighter2.speed }}],
+                        fill: true,
+                        backgroundColor: 'rgba(255, 0, 0, 0.2)',
+                        borderColor: 'rgb(255, 0, 0)',
+                        pointBackgroundColor: 'rgb(255, 0, 0)',
+                        pointBorderColor: '#000',
+                        pointHoverBackgroundColor: '#000',
+                        pointHoverBorderColor: 'rgb(255, 0, 0)'
+                    }
+                ]
+            },
+            options: {
+                elements: {
+                    line: { borderWidth: 3 }
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(255, 255, 255, 0.3)' },
+                        grid: { color: 'rgba(255, 255, 255, 0.3)' },
+                        pointLabels: { color: '#0f0', font: { size: 14, family: 'Roboto Mono' } },
+                        ticks: { color: '#0f0', backdropColor: 'transparent', suggestedMin: 0, suggestedMax: 100 }
+                    }
+                },
+                plugins: {
+                    legend: { labels: { color: '#0f0', font: { family: 'Roboto Mono' } } }
+                }
+            }
+        });
+    {% endif %}
+
+    // Autocomplete Functionality
+    const fighter1Input = document.getElementById('id_fighter1');
+    const fighter1IdInput = document.getElementById('fighter1_id');
+    const suggestions1 = document.getElementById('suggestions1');
+    const fighter2Input = document.getElementById('id_fighter2');
+    const fighter2IdInput = document.getElementById('fighter2_id');
+    const suggestions2 = document.getElementById('suggestions2');
+
+    function fetchSuggestions(input, suggestionsDiv, idInput, otherInputId) {
+        const query = input.value.trim();
+        if (query.length < 2) {
+            suggestionsDiv.classList.add('hidden');
+            return;
+        }
+        fetch(`/fighters/autocomplete/?q=${encodeURIComponent(query)}&exclude=${otherInputId === 'id_fighter1' ? fighter2IdInput.value : fighter1IdInput.value}`)
+            .then(response => response.json())
+            .then(data => {
+                suggestionsDiv.innerHTML = '';
+                if (data.length > 0) {
+                    data.forEach(fighter => {
+                        const div = document.createElement('div');
+                        div.className = 'suggestion-item p-2 text-white hover:bg-neon-green hover:text-black cursor-pointer border-b border-neon';
+                        div.textContent = fighter.name;
+                        div.dataset.id = fighter.id;
+                        div.addEventListener('click', () => {
+                            input.value = fighter.name;
+                            idInput.value = fighter.id;
+                            suggestionsDiv.classList.add('hidden');
+                            input.dispatchEvent(new Event('change'));
+                        });
+                        suggestionsDiv.appendChild(div);
+                    });
+                    suggestionsDiv.classList.remove('hidden');
+                } else {
+                    suggestionsDiv.classList.add('hidden');
+                }
+            })
+            .catch(error => console.error('Error fetching suggestions:', error));
+    }
+
+    [fighter1Input, fighter2Input].forEach(input => {
+        const idInput = input.id === 'id_fighter1' ? fighter1IdInput : fighter2IdInput;
+        const suggestionsDiv = input.id === 'id_fighter1' ? suggestions1 : suggestions2;
+        input.addEventListener('input', () => {
+            fetchSuggestions(input, suggestionsDiv, idInput, input.id);
+        });
+        input.addEventListener('blur', () => {
+            setTimeout(() => suggestionsDiv.classList.add('hidden'), 200);
+        });
+        input.addEventListener('focus', () => {
+            if (input.value.trim().length >= 2) {
+                fetchSuggestions(input, suggestionsDiv, idInput, input.id);
+            }
+        });
+    });
+
+    // Prevent form submission if both fighters are the same
+    document.querySelector('form').addEventListener('submit', (e) => {
+        if (fighter1IdInput.value && fighter2IdInput.value && fighter1IdInput.value === fighter2IdInput.value) {
+            e.preventDefault();
+            alert('Please select two different fighters.');
+        }
+    });
+});
+</script>
+{% endblock %}

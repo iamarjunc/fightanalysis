@@ -1,0 +1,149 @@
+{% extends 'fighters/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="particles-js" class="absolute inset-0"></div>
+    <div class="relative z-10">
+        <h1 class="text-4xl font-bold futuristic-title mb-6">Match Prediction and Poll</h1>
+
+        <div class="futuristic-container p-6">
+            <h2 class="text-2xl futuristic-title">{{ fight_card.event_name }}</h2>
+            <p class="futuristic-text">{{ fight_card.event_date|date:"F d, Y, H:i T" }}</p>
+
+            <div class="flex justify-around items-center mt-6">
+                <div class="futuristic-stats w-1/2 mx-2">
+                    <div class="text-center">
+                        {% if fight_card.fighter1.photo %}
+                        <a href="{% url 'fighters:fighter_detail' pk=fight_card.fighter1.pk %}">
+                            <div class="futuristic-photo-container mx-auto">
+                                <img src="{{ fight_card.fighter1.photo.url }}" alt="{{ fight_card.fighter1.name }}" class="futuristic-photo">
+                            </div>
+                        </a>
+                        {% else %}
+                            <div class="futuristic-photo-placeholder mx-auto">
+                                No Photo
+                            </div>
+                        {% endif %}
+                    </div>
+                    <h3 class="text-lg futuristic-title text-center mt-2">{{ fight_card.fighter1.name }}</h3>
+                    <p class="futuristic-text">Striking: {{ fight_card.fighter1.striking }}</p>
+                    <p class="futuristic-text">Grappling: {{ fight_card.fighter1.grappling }}</p>
+                    <p class="futuristic-text">Stamina: {{ fight_card.fighter1.stamina }}</p>
+                    <p class="futuristic-text">Defense: {{ fight_card.fighter1.defense }}</p>
+                    <p class="futuristic-text">Speed: {{ fight_card.fighter1.speed }}</p>
+                </div>
+                <div class="futuristic-stats w-1/2 mx-2">
+                    <div class="text-center">
+                        {% if fight_card.fighter2.photo %}
+                        <a href="{% url 'fighters:fighter_detail' pk=fight_card.fighter2.pk %}">
+                            <div class="futuristic-photo-container mx-auto">
+                                <img src="{{ fight_card.fighter2.photo.url }}" alt="{{ fight_card.fighter2.name }}" class="futuristic-photo">
+                            </div>
+                        </a>
+                        {% else %}
+                            <div class="futuristic-photo-placeholder mx-auto">
+                                No Photo
+                            </div>
+                        {% endif %}
+                    </div>
+                    <h3 class="text-lg futuristic-title text-center mt-2">{{ fight_card.fighter2.name }}</h3>
+                    <p class="futuristic-text">Striking: {{ fight_card.fighter2.striking }}</p>
+                    <p class="futuristic-text">Grappling: {{ fight_card.fighter2.grappling }}</p>
+                    <p class="futuristic-text">Stamina: {{ fight_card.fighter2.stamina }}</p>
+                    <p class="futuristic-text">Defense: {{ fight_card.fighter2.defense }}</p>
+                    <p class="futuristic-text">Speed: {{ fight_card.fighter2.speed }}</p>
+                </div>
+            </div>
+
+            <p class="prediction text-xl font-bold futuristic-title mt-6">Our Prediction: {{ fight_card.predicted_winner }} is likely to win!</p>
+
+        <div class="futuristic-poll-form mt-6">
+            <h3 class="text-lg futuristic-title">Who do you think will win?</h3>
+            <form method="post">
+                {% csrf_token %}
+                <label class="block mb-2">
+                    <input type="radio" name="chosen_fighter" value="{{ fight_card.fighter1.id }}" required class="mr-2">
+                    {{ fight_card.fighter1.name }}
+                </label>
+                <label class="block mb-2">
+                    <input type="radio" name="chosen_fighter" value="{{ fight_card.fighter2.id }}" class="mr-2">
+                    {{ fight_card.fighter2.name }}
+                </label>
+                <button type="submit" class="btn btn-neon-green px-4 py-2 rounded">Vote</button>
+            </form>
+            {% for message in messages %}
+                <p class="text-{{ message.tags }} futuristic-text">{{ message }}</p>
+            {% endfor %}
+        </div>
+
+        <div class="futuristic-poll-results mt-6">
+            <h3 class="text-lg futuristic-title">Poll Results</h3>
+            <p class="futuristic-text">{{ fight_card.fighter1.name }}: {{ votes_fighter1 }} votes ({{ votes_fighter1_percent }}%)</p>
+            <p class="futuristic-text">{{ fight_card.fighter2.name }}: {{ votes_fighter2 }} votes ({{ votes_fighter2_percent }}%)</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#0f0"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#0f0",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+{% endblock %}
