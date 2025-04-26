@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -23,10 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^#&4-+*ao2(38s*@d7arycyihec7yw&0s%v17_bov88055r$(5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # Set to False for production on Vercel
 
-ALLOWED_HOSTS = ['.vercel.app','*']
-
+ALLOWED_HOSTS = ['.vercel.app', '*']
 
 # Application definition
 
@@ -38,10 +36,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'fighters.apps.FightersConfig',
+    'whitenoise.runserver_nostatic',  # Add whitenoise for static file serving
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add whitenoise middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -70,20 +70,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'fighter_analysis.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',  # From Vercel Postgres
+        'NAME': 'postgres',
         'USER': 'postgres.tsaaagfvwzsyrwputobo',
         'PASSWORD': 'Davean#123',
         'HOST': 'aws-0-ap-southeast-1.pooler.supabase.com',
@@ -109,7 +102,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
@@ -121,16 +113,18 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Where collected static files will be stored
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # Use whitenoise for compression
 
-# fighter_analysis/settings.py (add to the end)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# Media files (served from a separate Vercel static project)
+MEDIA_URL = 'https://fighter-analysis-static.vercel.app/media/'
+MEDIA_ROOT = ''  # Leave empty since media files are hosted on a separate Vercel project
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
